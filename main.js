@@ -26,7 +26,6 @@ window.addEventListener('load', function () {
 		countMinutes.innerHTML = 60 - minutes;
 		countHours.innerHTML = 24 - hours;
 		countDays.innerHTML = startDays - day;
-		console.log(seconds);
 	};
 
 	function nul() {
