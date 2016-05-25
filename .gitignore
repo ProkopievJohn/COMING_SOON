@@ -1,47 +1,37 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
+/app/bower_components
 .AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
+._*
 .apdisk
+.Trashes
+# Windows image file caches
+# Thumbnails
+$RECYCLE.BIN/
+.VolumeIcon.icns
+*.cab
+# Recycle Bin used on file shares
+.AppleDouble
+# Files that might appear in the root of a volume
+# Directories potentially created on remote AFP share
+# OSX
+*.lnk
+ehthumbs.db
+# Operating System Files
+.TemporaryItems
+.Spotlight-V100
+# Folder config file
+Temporary Items
+# Windows shortcuts
+*.msm
+# =========================
+*.msi
+.fseventsd
+# Windows Installer files
+Desktop.ini
+.DS_Store
+/node_modules
+Network Trash Folder
+Thumbs.db
+.LSOverride
+.DocumentRevisions-V100
+*.msp
+.AppleDesktop
