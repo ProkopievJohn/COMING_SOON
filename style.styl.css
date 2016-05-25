@@ -98,7 +98,7 @@ body {
   background: url("logo_lr.png") no-repeat;
   background-size: cover;
   width: 150px;
-  height: 50px;
+  height: 53px;
 }
 @media (max-width: 436px) {
   .main .count {
@@ -107,7 +107,6 @@ body {
     background-color: #fff;
   }
   .mylogo {
-    width: 30px;
-    height: 10px;
+    display: none;
   }
 }
