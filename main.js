@@ -1,50 +1,33 @@
 window.addEventListener('load', function () {
-	var today = new Date(),
-			year = today.getFullYear(),
-			month = today.getMonth(),
+	var dateStartST = new Date(2016, 4, 27, 18, 30),
+			startST = dateStartST.valueOf(),
+// get dom el
 			countDays = document.querySelector('.count_days'),
 			countHours = document.querySelector('.count_hours'),
 			countMinutes = document.querySelector('.count_minutes'),
-			countSeconds = document.querySelector('.count_seconds'),
-			startDays = 27,
-			startHours = 18,
-			startMinutes = 30,
-			startSeconds = 60,
-			day = today.getDate(),
-			hours = today.getHours(),
-			minutes = today.getMinutes(),
-			seconds = today.getSeconds();
+			countSeconds = document.querySelector('.count_seconds');
+	
+	function StartComingSoon() {
+// math days, hour, minutes, seconds
+		var today = new Date(),
+				todayST = today.valueOf(),
+				mathDays = Math.floor((startST - todayST) / (1000 * 60 * 60 * 24)),
+				mathHours = Math.floor((startST - todayST) / (1000 * 60 * 60)),
+				mathMinutes = Math.floor((startST - todayST) / (1000 * 60)),
+				mathSeconds = Math.floor((startST - todayST) / (1000));
 
-	function getStartComingSoon() {
-		today = new Date(),
-		day = today.getDate(),
-		hours = today.getHours(),
-		minutes = today.getMinutes(),
-		seconds = today.getSeconds();
-		
-		countSeconds.innerHTML = 60 - seconds;
-		countMinutes.innerHTML = 60 - minutes;
-		countHours.innerHTML = 24 - hours;
-		countDays.innerHTML = startDays - day;
-	};
-
-	function nul() {
-		countSeconds.innerHTML = 0;
-		countMinutes.innerHTML = 0;
-		countHours.innerHTML = 0;
-		countDays.innerHTML = 0;
-	};
-
-	if (year != 2016 || month != 4) {
-		nul();
-	} else {
-		if (hours == startHours) {
-			if (minutes == startMinutes) {
-				if (seconds == startSeconds) {
-					nul();
-				}
-			}
+		if (mathSeconds > 0) {
+			countDays.innerHTML = mathDays;
+			countHours.innerHTML = mathHours - (mathDays * 24);
+			countMinutes.innerHTML = mathMinutes - (mathHours * 60);
+			countSeconds.innerHTML = mathSeconds - (mathMinutes * 60);
+		} else {
+			countSeconds.innerHTML = 0;
+			countMinutes.innerHTML = 0;
+			countHours.innerHTML = 0;
+			countDays.innerHTML = 0;
 		}
-		setInterval(getStartComingSoon, 1000)
-	};
+	}
+	
+	setInterval(StartComingSoon, 1000);
 });
