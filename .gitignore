@@ -1,37 +1,47 @@
-/app/bower_components
-.AppleDB
-._*
-.apdisk
-.Trashes
-# Windows image file caches
-# Thumbnails
-$RECYCLE.BIN/
+app/jade/head.jade
 .VolumeIcon.icns
+app/img/bridge-828849_1280.jpg
+app/jade/footer.jade
+$RECYCLE.BIN/
+# OSX
+app/css/style.styl.min.css
+# Files that might appear in the root of a volume
+.AppleDouble
+*.lnk
 *.cab
 # Recycle Bin used on file shares
-.AppleDouble
-# Files that might appear in the root of a volume
-# Directories potentially created on remote AFP share
-# OSX
-*.lnk
-ehthumbs.db
-# Operating System Files
-.TemporaryItems
-.Spotlight-V100
-# Folder config file
-Temporary Items
-# Windows shortcuts
-*.msm
-# =========================
-*.msi
-.fseventsd
-# Windows Installer files
+/app
+app/css/style.styl.css
+._*
+/app/bower_components
+# Windows image file caches
+.Trashes
+app/img/bridge-828849_1920.jpg
+.apdisk
+/node_modules
 Desktop.ini
 .DS_Store
-/node_modules
-Network Trash Folder
-Thumbs.db
-.LSOverride
-.DocumentRevisions-V100
-*.msp
+# Windows Installer files
+# Thumbnails
+# =========================
+*.msi
 .AppleDesktop
+.fseventsd
+# Operating System Files
+# Directories potentially created on remote AFP share
+.DocumentRevisions-V100
+.bowerrc
+*.msm
+.LSOverride
+Thumbs.db
+.Spotlight-V100
+app/jade/foot.jade
+.TemporaryItems
+ehthumbs.db
+*.msp
+.AppleDB
+Network Trash Folder
+# Windows shortcuts
+Temporary Items
+# Folder config file
+bower.json
