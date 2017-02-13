@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-	var dateStartST = new Date(2016, 4, 29, 17, 30),
+	var dateStartST = new Date(2017, 5, 10, 18),
 			startST = dateStartST.valueOf(),
 // get dom el
 			countDays = document.querySelector('.count_days'),
